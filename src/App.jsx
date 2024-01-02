@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import "./App.scss";
+import "./App.css";
 import axios from "axios";
 import Loader from "./components/Loader/Loader";
 import MainContent from "./components/MainContent/MainContent";

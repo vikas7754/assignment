@@ -1,4 +1,4 @@
-import "./Card.scss";
+import "./Card.css";
 function Card({ data, hideStatus, hideImg }) {
   return (
     <div className="card">

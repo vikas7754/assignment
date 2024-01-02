@@ -1,0 +1,94 @@
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card_header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card_header .img {
+  position: relative;
+  width: 25px;
+  height: 25px;
+}
+.card_header .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.card_header .img span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #fff;
+}
+.card_header .img .online {
+  background: rgb(0, 219, 0);
+}
+.card_header .img .offline {
+  background: #ccc;
+}
+.card_header .card_id {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+}
+
+.card_title {
+  display: flex;
+  gap: 5px;
+}
+.card_title h4 {
+  color: rgba(0, 0, 0, 0.7);
+}
+.card_title .blue {
+  color: rgb(83, 83, 255);
+}
+.card_title .yellow {
+  color: rgb(255, 205, 39);
+}
+.card_title .red {
+  color: rgb(255, 55, 55);
+}
+.card_title .green {
+  color: rgb(0, 169, 0);
+}
+
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.tags > div {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+}
+.tags > div span {
+  color: rgba(0, 0, 0, 0.5);
+}
+.tags i.red {
+  color: rgb(255, 55, 55);
+}
+.tags .icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}/*# sourceMappingURL=Card.css.map */

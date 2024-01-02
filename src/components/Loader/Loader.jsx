@@ -1,4 +1,4 @@
-import "./Loader.scss";
+import "./Loader.css";
 function Loader() {
   return (
     <div className="loader_container">

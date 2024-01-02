@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./MainContent.scss";
+import "./MainContent.css";
 import Card from "../Card/Card";
 
 const priorities = [
@@ -148,36 +148,36 @@ function MainContent(props) {
                     {i === 0 && (
                       <>
                         <i className="fa-solid fa-circle-dot blue"></i>
-                        <span>Backlog</span>
-                        <span>{item.length}</span>
+                        <strong>Backlog</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 1 && (
                       <>
                         <i className="fa-regular fa-circle"></i>
-                        <span>Todo</span>
-                        <span>{item.length}</span>
+                        <strong>Todo</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 2 && (
                       <>
                         <i className="fa-solid fa-circle-half-stroke yellow"></i>
-                        <span>In progress</span>
-                        <span>{item.length}</span>
+                        <strong>In progress</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 3 && (
                       <>
                         <i className="fa-solid fa-circle-check green"></i>
-                        <span>Done</span>
-                        <span>{item.length}</span>
+                        <strong>Done</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 4 && (
                       <>
                         <i className="fa-solid fa-circle-xmark red"></i>
-                        <span>Cancelled</span>
-                        <span>{item.length}</span>
+                        <strong>Cancelled</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                   </>
@@ -196,8 +196,8 @@ function MainContent(props) {
                         }
                       ></span>
                     </div>
-                    <span>{item[0]?.user?.name}</span>
-                    <span>{item.length}</span>
+                    <strong>{item[0]?.user?.name}</strong>
+                    <span>({item.length})</span>
                   </>
                 )}
                 {grouping === "priority" && (
@@ -205,22 +205,22 @@ function MainContent(props) {
                     {i === 0 && (
                       <>
                         <i className="fa-solid fa-ellipsis"></i>
-                        <span>No priority</span>
-                        <span>{item.length}</span>
+                        <strong>No priority</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 1 && (
                       <>
                         <i className="fa-solid fa-circle-exclamation red"></i>
-                        <span>Urgent</span>
-                        <span>{item.length}</span>
+                        <strong>Urgent</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 2 && (
                       <>
                         <i className="fa-solid fa-signal"></i>
-                        <span>High</span>
-                        <span>{item.length}</span>
+                        <strong>High</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 3 && (
@@ -241,8 +241,8 @@ function MainContent(props) {
                             </g>
                           </svg>
                         </i>
-                        <span>Medium</span>
-                        <span>{item.length}</span>
+                        <strong>Medium</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                     {i === 4 && (
@@ -263,8 +263,8 @@ function MainContent(props) {
                             </g>
                           </svg>
                         </i>
-                        <span>Low</span>
-                        <span>{item.length}</span>
+                        <strong>Low</strong>
+                        <span>({item.length})</span>
                       </>
                     )}
                   </>
